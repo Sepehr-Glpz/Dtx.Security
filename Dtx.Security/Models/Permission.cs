@@ -10,6 +10,7 @@
 		// **********
 		// **********
 		// **********
+		// **********
 		[System.ComponentModel.DataAnnotations.Display
 			(ResourceType = typeof(Resources.DataDictionary),
 			Name = nameof(Resources.DataDictionary.ApplicationGroup))]
