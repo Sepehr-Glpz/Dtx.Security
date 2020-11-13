@@ -1,6 +1,6 @@
 ﻿namespace Models.Base
 {
-	public class Entity : object
+	public abstract class Entity : object
 	{
 		public Entity() : base()
 		{
@@ -10,6 +10,9 @@
 
 		// **********
 		[System.ComponentModel.DataAnnotations.Key]
+
+		[System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated
+			(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None)]
 
 		[System.ComponentModel.DataAnnotations.Display
 			(ResourceType = typeof(Resources.DataDictionary),

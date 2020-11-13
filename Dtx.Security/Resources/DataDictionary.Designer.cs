@@ -322,11 +322,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ordering.
+        /// </summary>
+        public static string Ordering {
+            get {
+                return ResourceManager.GetString("Ordering", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Output Parameters.
         /// </summary>
         public static string OutputParameters {
             get {
                 return ResourceManager.GetString("OutputParameters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Owner.
+        /// </summary>
+        public static string Owner {
+            get {
+                return ResourceManager.GetString("Owner", resourceCulture);
             }
         }
         
@@ -345,6 +363,15 @@ namespace Resources {
         public static string Path {
             get {
                 return ResourceManager.GetString("Path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Programmer.
+        /// </summary>
+        public static string Programmer {
+            get {
+                return ResourceManager.GetString("Programmer", resourceCulture);
             }
         }
         
@@ -372,6 +399,15 @@ namespace Resources {
         public static string RequestType {
             get {
                 return ResourceManager.GetString("RequestType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Super User.
+        /// </summary>
+        public static string SuperUser {
+            get {
+                return ResourceManager.GetString("SuperUser", resourceCulture);
             }
         }
         

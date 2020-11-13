@@ -1,6 +1,6 @@
 ﻿namespace Data
 {
-	public class DatabaseContext : Microsoft.EntityFrameworkCore.DbContext //, IDatabaseContext
+	internal class DatabaseContext : Microsoft.EntityFrameworkCore.DbContext //, IDatabaseContext
 	{
 		#region Solution (1)
 		//public DatabaseContext() : base()
@@ -87,7 +87,8 @@
 		public Microsoft.EntityFrameworkCore.DbSet<Models.UserPasswordHistory> UserPasswordHistories { get; set; }
 		// **********
 
-		protected override void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder modelBuilder)
+		protected override void OnModelCreating
+			(Microsoft.EntityFrameworkCore.ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
 

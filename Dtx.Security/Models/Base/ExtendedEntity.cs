@@ -1,9 +1,10 @@
 ﻿namespace Models.Base
 {
-	public class ExtendedEntity : Entity
+	public abstract class ExtendedEntity : Entity
 	{
 		public ExtendedEntity() : base()
 		{
+			//Ordering = 10000;
 			UpdateDateTime = Utility.Now;
 		}
 
@@ -12,6 +13,13 @@
 			(ResourceType = typeof(Resources.DataDictionary),
 			Name = nameof(Resources.DataDictionary.IsActive))]
 		public bool IsActive { get; set; }
+		// **********
+
+		// **********
+		//[System.ComponentModel.DataAnnotations.Display
+		//	(ResourceType = typeof(Resources.DataDictionary),
+		//	Name = nameof(Resources.DataDictionary.Ordering))]
+		//public int Ordering { get; set; }
 		// **********
 
 		// **********

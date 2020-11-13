@@ -2,11 +2,18 @@
 {
 	public class Application : Base.ExtraExtendedEntity
 	{
-		public Application()
+		public Application() : base()
 		{
 		}
 
 		// **********
+		//[System.ComponentModel.DataAnnotations.Display
+		//	(Name = "IP Restricted")]
+
+		//[System.ComponentModel.DataAnnotations.Display
+		//	(ResourceType = typeof(Resources.DataDictionary),
+		//	Name = "IsIPRestricted")]
+
 		[System.ComponentModel.DataAnnotations.Display
 			(ResourceType = typeof(Resources.DataDictionary),
 			Name = nameof(Resources.DataDictionary.IsIPRestricted))]
@@ -24,6 +31,22 @@
 		[System.ComponentModel.DataAnnotations.Display
 			(ResourceType = typeof(Resources.DataDictionary),
 			Name = nameof(Resources.DataDictionary.Name))]
+
+		//[System.ComponentModel.DataAnnotations.Required
+		//	(AllowEmptyStrings = false)]
+
+		//[System.ComponentModel.DataAnnotations.Required
+		//	(AllowEmptyStrings = false,
+		//	ErrorMessage = "You did not specify Name!")]
+
+		//[System.ComponentModel.DataAnnotations.Required
+		//	(AllowEmptyStrings = false,
+		//	ErrorMessage = "You did not specify {0}!")]
+
+		//[System.ComponentModel.DataAnnotations.Required
+		//	(AllowEmptyStrings = false,
+		//	ErrorMessageResourceType = typeof(Resources.ErrorMessages),
+		//	ErrorMessageResourceName = "Required")]
 
 		[System.ComponentModel.DataAnnotations.Required
 			(AllowEmptyStrings = false,
