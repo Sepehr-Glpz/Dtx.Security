@@ -24,6 +24,7 @@
 
 		/// <summary>
 		/// حضور این تابع اصلا حرفه‌ای نیست
+		/// Agree!
 		/// </summary>
 		/// <returns></returns>
 		//System.Linq.IQueryable<T> Get();
